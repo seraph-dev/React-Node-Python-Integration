@@ -7,6 +7,7 @@ import db from './db/models/index.js';
 import cron from 'node-cron';
 import swaggerUI from 'swagger-ui-express';
 import swaggerJsDoc from 'swagger-jsdoc';
+import fileupload from "express-fileupload";
 
 import { exec } from 'child_process';
 
@@ -15,6 +16,7 @@ import fileRoutes from './routes/file.js';
 import userRoutes from './routes/user.js';
 import analytics from './routes/analytics.js';
 import products from './routes/products.js';
+import operationRoutes from './routes/operation.js';
 
 // swagger docs autogenerating options
 const options = {
@@ -77,6 +79,8 @@ app.use(
 
 import './auth/auth.js';
 
+app.use(express.static("public"));
+app.use(fileupload());
 app.use(bodyParser.json());
 app.use(
   bodyParser.urlencoded({
@@ -85,6 +89,7 @@ app.use(
 );
 
 app.use('/api/auth', authRoutes);
+app.use('/api/operation', passport.authenticate('jwt', { session: false }), operationRoutes);
 app.use('/api/file', fileRoutes);
 app.use('/api/products', passport.authenticate('jwt', { session: false }), products);
 app.use('/api/analytics', passport.authenticate('jwt', { session: false }), analytics);

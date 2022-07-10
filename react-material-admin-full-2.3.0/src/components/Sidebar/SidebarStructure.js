@@ -18,6 +18,7 @@ import {
   Person as PersonIcon,
   AccountCircle as ProfileIcon
 } from '@mui/icons-material';
+import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard';
 import ChatIcon from '@mui/icons-material/Chat';
 import ViewCompactRoundedIcon from '@mui/icons-material/ViewCompactRounded';
 
@@ -26,6 +27,7 @@ import Dot from './components/Dot';
 
 const structure = [
   { id: 100, label: 'Profile', link: '/app/profile', icon: <ProfileIcon /> },
+  { id: 101, label: 'Operation', link: '/app/operation', icon: <DeveloperBoardIcon />},
   { id: 0, label: 'Dashboard', link: '/app/dashboard', icon: <HomeIcon /> },
   {
     id: 1,

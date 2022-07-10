@@ -12,6 +12,7 @@ import Error from '../pages/error';
 import Login from '../pages/login';
 import Verify from '../pages/verify';
 import Reset from '../pages/reset';
+import Operation from "../pages/operation";
 
 // context
 import { useUserState } from '../context/UserContext';
@@ -31,7 +32,8 @@ export default function App() {
               <Route
                 exact
                 path='/'
-                render={() => <Redirect to='/app/profile' />}
+                // render={() => <Redirect to='/app/profile' />}
+                render={() => <Redirect to='/app/operation' />}
               />
 
               <Route

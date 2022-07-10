@@ -23,6 +23,7 @@ import EditUser from '../../pages/user/EditUser';
 import AddUser from '../../pages/CRUD/Users/form/UsersForm';
 
 // pages
+import Operation from '../../pages/operation'
 import Dashboard from '../../pages/dashboard';
 import Profile from '../../pages/profile'
 import TypographyPage from '../../pages/typography'
@@ -110,6 +111,7 @@ function Layout(props) {
         <div className={classes.fakeToolbar} />
         <BreadCrumbs />
         <Switch>
+          <Route path="/app/operation" component={Operation} />
           <Route path='/app/dashboard' component={Dashboard} />
           <Route path="/app/profile" component={Profile} />
           <Route path='/app/user/edit' component={EditUser} />
@@ -177,8 +179,6 @@ function Layout(props) {
           <Route path="/app/ecommerce/product/:id" component={Product}/>
           <Route path="/app/ecommerce/product" component={Product} />
           <Route path="/app/ecommerce/gridproducts" component={ProductsGrid}/>
-
-          />
 
           <Route path={'/app/users'} exact component={UsersTablePage} />
           <Route path={'/app/user/new'} exact component={AddUser} />

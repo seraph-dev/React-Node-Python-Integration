@@ -1,0 +1,13 @@
+.operation-upload {
+  padding-left: 32px;
+}
+.upload-file {
+  background-color: white;
+  border-radius: 4px;
+  padding-bottom: 20px;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.upload-file .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-6.css-1osj8n2-MuiGrid-root {
+  padding-left: 0;
+}
