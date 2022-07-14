@@ -23,7 +23,8 @@ import EditUser from '../../pages/user/EditUser';
 import AddUser from '../../pages/CRUD/Users/form/UsersForm';
 
 // pages
-import Operation from '../../pages/operation'
+import Operation from '../../pages/operation';
+import UploadFile from "../UploadFile";
 import Dashboard from '../../pages/dashboard';
 import Profile from '../../pages/profile'
 import TypographyPage from '../../pages/typography'
@@ -112,6 +113,7 @@ function Layout(props) {
         <BreadCrumbs />
         <Switch>
           <Route path="/app/operation" component={Operation} />
+          <Route path="/app/uploadfile" component={UploadFile} />
           <Route path='/app/dashboard' component={Dashboard} />
           <Route path="/app/profile" component={Profile} />
           <Route path='/app/user/edit' component={EditUser} />

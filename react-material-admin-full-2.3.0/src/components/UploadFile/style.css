@@ -1,5 +1,6 @@
 .operation-upload {
   padding-left: 32px;
+  margin-top: 70px;
 }
 .upload-file {
   background-color: white;
@@ -10,4 +11,13 @@
 
 .upload-file .MuiGrid-root.MuiGrid-item.MuiGrid-grid-xs-6.css-1osj8n2-MuiGrid-root {
   padding-left: 0;
+}
+
+.fileupload-progressbar {
+  height: 12px;
+  border-radius: 4px;
+}
+
+.dialog-content {
+  margin: 20px 0
 }
