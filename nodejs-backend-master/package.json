@@ -36,6 +36,7 @@
     "passport-microsoft": "^0.0.5",
     "pg": "8.7.3",
     "pg-hstore": "2.3.4",
+    "python-shell": "^3.0.1",
     "sequelize": "6.21.2",
     "sqlite": "4.1.1",
     "swagger-jsdoc": "^6.2.1",
